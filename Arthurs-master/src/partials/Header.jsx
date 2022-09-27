@@ -1,6 +1,6 @@
 import React, { useState, useEffect , Component } from "react";
 import product1 from '../partials/Images/product1.jpg';
-
+import { Modal } from "./Welcome";
 function Header() {
   
     const cart = document.getElementById('cartholder');
@@ -28,11 +28,8 @@ function Header() {
                             </a>
                         </div>
                         <div class=" flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
-
-                            <button id="cartholder" class="w-full px-3 py-2 mr-0 text-gray-700 md:mr-2 lg:mr-3 md:w-auto bg-orange-900 hover:bg-orange-200 rounded-full text-white transition ease-in-out delay 150 bg-orange-900 hover:-translate-y-1 hover:scale-120 hover:bg-orange-200 duration -300" >
-                                Cart
-                            </button>                          
-                            <a href="#_" class=" inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-orange-900 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-orange-200 transition ease=in-out delay 150 bg-orange-900 hover:-translate-y-1 hover:scale-120 hover:bg-orange-200 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2" >Profile</a>
+                        <Modal />
+                            {/* <a href="#_" class=" inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-orange-900 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-orange-200 transition ease=in-out delay 150 bg-orange-900 hover:-translate-y-1 hover:scale-120 hover:bg-orange-200 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2" >Profile</a> */}
                         <script src="Cart.jsx"></script>
                         </div>
                     </div>
